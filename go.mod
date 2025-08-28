@@ -1,3 +1,3 @@
-module github.com/jskrd/advent-of-code-2024
+module github.com/jskrd/aoc-go
 
 go 1.23.3

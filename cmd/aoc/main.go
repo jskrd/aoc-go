@@ -4,12 +4,12 @@ import (
 	"flag"
 	"os"
 
-	"github.com/jskrd/advent-of-code-2024/internal/day01"
-	"github.com/jskrd/advent-of-code-2024/internal/day02"
-	"github.com/jskrd/advent-of-code-2024/internal/day03"
-	"github.com/jskrd/advent-of-code-2024/internal/day04"
-	"github.com/jskrd/advent-of-code-2024/internal/day05"
-	"github.com/jskrd/advent-of-code-2024/internal/day06"
+	"github.com/jskrd/aoc-go/internal/day01"
+	"github.com/jskrd/aoc-go/internal/day02"
+	"github.com/jskrd/aoc-go/internal/day03"
+	"github.com/jskrd/aoc-go/internal/day04"
+	"github.com/jskrd/aoc-go/internal/day05"
+	"github.com/jskrd/aoc-go/internal/day06"
 )
 
 func main() {

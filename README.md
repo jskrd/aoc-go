@@ -3,8 +3,8 @@
 [![Test](https://github.com/jskrd/aoc-go/actions/workflows/test.yml/badge.svg)](https://github.com/jskrd/aoc-go/actions/workflows/test.yml)
 
 ```sh
-$ ./aoc24 -h
-Usage of ./aoc24:
+$ go run cmd/aoc/main.go -h
+Usage of ...:
   -day int
     	The day of the puzzle to solve
   -input string
@@ -14,6 +14,6 @@ Usage of ./aoc24:
 ```
 
 ```sh
-$ ./aoc24 -day=1 -part=1 -input=input.txt
+$ go run cmd/aoc/main.go -day=1 -part=1 -input=input.txt
 3508942
 ```
