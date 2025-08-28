@@ -1,6 +1,6 @@
 # 🎄 Advent of Code
 
-[![Test](https://github.com/jskrd/advent-of-code-2024/actions/workflows/release.yml/badge.svg)](https://github.com/jskrd/advent-of-code-2024/actions/workflows/release.yml)
+[![Test](https://github.com/jskrd/aoc-go/actions/workflows/test.yml/badge.svg)](https://github.com/jskrd/aoc-go/actions/workflows/test.yml)
 
 ```sh
 $ ./aoc24 -h
