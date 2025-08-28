@@ -7,8 +7,8 @@ import (
 )
 
 func TestParseInput(t *testing.T) {
-	input1, _ := os.ReadFile("../../test/data/day03/input_example1.txt")
-	input2, _ := os.ReadFile("../../test/data/day03/input_example2.txt")
+	input1, _ := os.ReadFile("../../../test/data/2024/day03/input_example1.txt")
+	input2, _ := os.ReadFile("../../../test/data/2024/day03/input_example2.txt")
 
 	tests := []struct {
 		input    string
@@ -33,7 +33,7 @@ func TestParseInput(t *testing.T) {
 }
 
 func TestSolvePartOne(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day03/input_example1.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day03/input_example1.txt")
 
 	expected := 161
 	actual := SolvePartOne(string(input))
@@ -44,7 +44,7 @@ func TestSolvePartOne(t *testing.T) {
 }
 
 func TestSolvePartTwo(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day03/input_example2.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day03/input_example2.txt")
 
 	expected := 48
 	actual := SolvePartTwo(string(input))

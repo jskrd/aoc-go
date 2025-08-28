@@ -7,7 +7,7 @@ import (
 )
 
 func TestParseInput(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day02/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day02/input_example.txt")
 
 	expected := [][]int{
 		{7, 6, 4, 2, 1},
@@ -25,7 +25,7 @@ func TestParseInput(t *testing.T) {
 }
 
 func TestSolvePartOne(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day02/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day02/input_example.txt")
 
 	expected := 2
 	actual := SolvePartOne(string(input))
@@ -36,7 +36,7 @@ func TestSolvePartOne(t *testing.T) {
 }
 
 func TestSolvePartTwo(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day02/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day02/input_example.txt")
 
 	expected := 4
 	actual := SolvePartTwo(string(input))

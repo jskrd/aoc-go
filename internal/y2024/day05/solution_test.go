@@ -7,7 +7,7 @@ import (
 )
 
 func TestParseInput(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day05/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day05/input_example.txt")
 
 	expected := parsedInput{
 		[][2]int{
@@ -50,7 +50,7 @@ func TestParseInput(t *testing.T) {
 }
 
 func TestSolvePartOne(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day05/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day05/input_example.txt")
 
 	expected := 143
 	actual := SolvePartOne(string(input))
@@ -61,7 +61,7 @@ func TestSolvePartOne(t *testing.T) {
 }
 
 func TestSolvePartTwo(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day05/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day05/input_example.txt")
 
 	expected := 123
 	actual := SolvePartTwo(string(input))
@@ -72,7 +72,7 @@ func TestSolvePartTwo(t *testing.T) {
 }
 
 func TestIsCorrectOrdering(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day05/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day05/input_example.txt")
 	example := parseInput(string(input))
 
 	tests := []bool{true, true, true, false, false, false}
@@ -88,7 +88,7 @@ func TestIsCorrectOrdering(t *testing.T) {
 }
 
 func TestFindOrderingsBefore(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day05/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day05/input_example.txt")
 	example := parseInput(string(input))
 
 	tests := []struct {
@@ -113,7 +113,7 @@ func TestFindOrderingsBefore(t *testing.T) {
 }
 
 func TestFindOrderingsAfter(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day05/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day05/input_example.txt")
 	example := parseInput(string(input))
 
 	tests := []struct {
@@ -138,7 +138,7 @@ func TestFindOrderingsAfter(t *testing.T) {
 }
 
 func TestCorrectUpdate(t *testing.T) {
-	input, _ := os.ReadFile("../../test/data/day05/input_example.txt")
+	input, _ := os.ReadFile("../../../test/data/2024/day05/input_example.txt")
 	example := parseInput(string(input))
 
 	tests := []struct {
