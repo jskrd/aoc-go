@@ -1,4 +1,4 @@
-# 🎁 Advent of Code 2024 🎁
+# 🎄 Advent of Code
 
 [![Test](https://github.com/jskrd/advent-of-code-2024/actions/workflows/release.yml/badge.svg)](https://github.com/jskrd/advent-of-code-2024/actions/workflows/release.yml)
 
