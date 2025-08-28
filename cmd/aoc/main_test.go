@@ -10,6 +10,10 @@ func TestSolve(t *testing.T) {
 		input    string
 		expected int
 	}{
+		{2023, 1, 1, "../../test/data/2023/day01/input.txt", 53651},
+		{2023, 1, 2, "../../test/data/2023/day01/input.txt", 53894},
+		{2023, 2, 1, "../../test/data/2023/day02/input.txt", 2377},
+		{2023, 2, 2, "../../test/data/2023/day02/input.txt", 71220},
 		{2024, 1, 1, "../../test/data/2024/day01/input.txt", 3508942},
 		{2024, 1, 2, "../../test/data/2024/day01/input.txt", 26593248},
 		{2024, 2, 1, "../../test/data/2024/day02/input.txt", 279},
