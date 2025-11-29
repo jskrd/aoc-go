@@ -1,47 +1,17 @@
 package day01
 
 import (
-	"runtime"
 	"strings"
-	"sync"
 )
 
 func SolveLevel1(input string) int {
 	lines := strings.Split(input, "\n")
 
-	jobs := make(chan string, len(lines))
-	results := make(chan int, len(lines))
-	var wg sync.WaitGroup
-
-	for i := 0; i < runtime.NumCPU(); i++ {
-		wg.Add(1)
-		go workerLevel1(jobs, results, &wg)
-	}
-
-	go func() {
-		for _, line := range lines {
-			jobs <- line
-		}
-		close(jobs)
-	}()
-
-	go func() {
-		wg.Wait()
-		close(results)
-	}()
-
-	var sum int
-	for result := range results {
-		sum += result
+	sum := 0
+	for _, line := range lines {
+		sum += findCalibrationValueLevel1(line)
 	}
 	return sum
-}
-
-func workerLevel1(jobs <-chan string, results chan<- int, wg *sync.WaitGroup) {
-	defer wg.Done()
-	for line := range jobs {
-		results <- findCalibrationValueLevel1(line)
-	}
 }
 
 func findCalibrationValueLevel1(line string) int {
@@ -72,39 +42,11 @@ func findCalibrationValueLevel1(line string) int {
 func SolveLevel2(input string) int {
 	lines := strings.Split(input, "\n")
 
-	jobs := make(chan string, len(lines))
-	results := make(chan int, len(lines))
-	var wg sync.WaitGroup
-
-	for i := 0; i < runtime.NumCPU(); i++ {
-		wg.Add(1)
-		go workerLevel2(jobs, results, &wg)
-	}
-
-	go func() {
-		for _, line := range lines {
-			jobs <- line
-		}
-		close(jobs)
-	}()
-
-	go func() {
-		wg.Wait()
-		close(results)
-	}()
-
-	var sum int
-	for result := range results {
-		sum += result
+	sum := 0
+	for _, line := range lines {
+		sum += findCalibrationValueLevel2(line)
 	}
 	return sum
-}
-
-func workerLevel2(lines <-chan string, results chan<- int, wg *sync.WaitGroup) {
-	defer wg.Done()
-	for line := range lines {
-		results <- findCalibrationValueLevel2(line)
-	}
 }
 
 var digits = map[string]rune{
