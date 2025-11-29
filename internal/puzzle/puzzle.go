@@ -4,12 +4,14 @@ import (
 	"fmt"
 
 	"github.com/jskrd/aoc-go/internal/puzzle/year2015"
+	"github.com/jskrd/aoc-go/internal/puzzle/year2016"
 	"github.com/jskrd/aoc-go/internal/puzzle/year2023"
 	"github.com/jskrd/aoc-go/internal/puzzle/year2024"
 )
 
 var Solutions = map[int]map[int]map[int]func(input string) int{
 	2015: year2015.Solutions,
+	2016: year2016.Solutions,
 	2023: year2023.Solutions,
 	2024: year2024.Solutions,
 }
