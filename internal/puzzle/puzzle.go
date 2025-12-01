@@ -7,6 +7,7 @@ import (
 	"github.com/jskrd/aoc-go/internal/puzzle/year2016"
 	"github.com/jskrd/aoc-go/internal/puzzle/year2023"
 	"github.com/jskrd/aoc-go/internal/puzzle/year2024"
+	"github.com/jskrd/aoc-go/internal/puzzle/year2025"
 )
 
 var Solutions = map[int]map[int]map[int]func(input string) int{
@@ -14,6 +15,7 @@ var Solutions = map[int]map[int]map[int]func(input string) int{
 	2016: year2016.Solutions,
 	2023: year2023.Solutions,
 	2024: year2024.Solutions,
+	2025: year2025.Solutions,
 }
 
 func GetSolution(year int, day int, level int) (func(input string) int, error) {
