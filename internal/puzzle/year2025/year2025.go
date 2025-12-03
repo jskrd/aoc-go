@@ -12,5 +12,6 @@ var Solutions = map[int]map[int]func(input string) int{
 	},
 	2: {
 		1: day02.SolveLevel1,
+		2: day02.SolveLevel2,
 	},
 }

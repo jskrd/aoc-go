@@ -30,6 +30,26 @@ func SolveLevel1(input string) int {
 	return sum
 }
 
+func SolveLevel2(input string) int {
+	idRanges := parseInput(input)
+
+	var invalidIds []int
+	for _, idRange := range idRanges {
+		for id := idRange.Start; id <= idRange.End; id++ {
+			if isRepeatedAtLeastTwice(id) {
+				invalidIds = append(invalidIds, id)
+			}
+		}
+	}
+
+	var sum int = 0
+	for _, id := range invalidIds {
+		sum += id
+	}
+
+	return sum
+}
+
 func parseInput(input string) []idRange {
 	parts := strings.Split(
 		strings.Trim(input, "\n"),
@@ -59,4 +79,22 @@ func isRepeatedOnlyTwice(id int) bool {
 	secondHalf := digits[digitsCount/2:]
 
 	return firstHalf == secondHalf
+}
+
+func isRepeatedAtLeastTwice(id int) bool {
+	digits := strconv.Itoa(id)
+	digitsCount := len(digits)
+
+	for division := 1; division <= digitsCount/2; division++ {
+		if digitsCount%division != 0 {
+			continue
+		}
+
+		part := digits[:division]
+		if strings.Count(digits, part) == digitsCount/division {
+			return true
+		}
+	}
+
+	return false
 }
