@@ -3,6 +3,7 @@ package year2025
 import (
 	"github.com/jskrd/aoc-go/internal/puzzle/year2025/day01"
 	"github.com/jskrd/aoc-go/internal/puzzle/year2025/day02"
+	"github.com/jskrd/aoc-go/internal/puzzle/year2025/day03"
 )
 
 var Solutions = map[int]map[int]func(input string) int{
@@ -13,5 +14,8 @@ var Solutions = map[int]map[int]func(input string) int{
 	2: {
 		1: day02.SolveLevel1,
 		2: day02.SolveLevel2,
+	},
+	3: {
+		1: day03.SolveLevel1,
 	},
 }
